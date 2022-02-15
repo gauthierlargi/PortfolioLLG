@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1d1a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h5 {
+  color: gold;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+i {
+  color: black;
+  font-size: 35px;
+  margin: 10px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.center {
+  margin: 0 auto;
+  width: 1040px;
+}
+.clear {
+  clear: both;
+}
+nav {
+  display: none;
+}
+#toggle {
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 5px;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s eeasy-in-out;
+  z-index: 8;
+}
+#toggle::before,
+#toggle::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s eeasy-in-out;
+}
+#toggle::before {
+  top: -12px;
+}
+#toggle::after {
+  top: 12px;
+}
+#toggle.active {
+  background-color: transparent;
+}
+#toggle.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  background-color: #1a1d1a;
+}
+#toggle.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  background-color: #1a1d1a;
+}
+#navigation {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  right: -100%;
+  width: 50%;
+  height: 100vh;
+  transition: 0.5s;
+  background-color: #f7f7f7;
+  z-index: 6;
+}
+#navigation.active {
+  right: 0;
+}
+#navigation.active ul li {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#navigation.active ul li a {
+  color: #1a1d1a;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#navigation.active div {
+  display: flex;
+}
+section.kosmos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+section.kosmos div {
+  width: 28%;
+}
+section.kosmos div img {
+  width: 100%;
+}
+section.kosmos div.text {
+  display: flex;
+  flex-direction: column;
+}
+section.kosmos div.text p {
+  color: white;
+  margin: 30px 0 50px;
+}
+section.kosmos div.text div.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+section.kosmos div.text div.btn a {
+  background-color: white;
+  padding: 10px 20px;
+  width: 170px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+section.kosmos div.text div.btn p {
+  padding: 10px ;
+  margin: 0;
+}
+section.kosmos div.text div.visit {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}

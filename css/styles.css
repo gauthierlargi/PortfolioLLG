@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+body {
+  background-image: url(../images/photomoi.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  color: #50b5da;
+  font-size: 60px;
+}
+h2 {
+  color: #EE964B;
+  font-size: 40px;
+}
+h3 {
+  color: #A6B07E;
+}
+h3,
+h4 {
+  font-size: 50px;
+}
+h1,
+h2,
+h3,
+h4 {
+  padding: 20px 0;
+}
+i {
+  color: black;
+  font-size: 35px;
+  margin: 10px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+label {
+  user-select: none;
+}
+.center {
+  margin: 0 auto;
+  width: 1040px;
+}
+.clear {
+  clear: both;
+}
+/* -- ---- LOADER ---- -- */
+#page-loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #63585E;
+}
+#page-loader img {
+  width: 13%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: rotate 2s ease-in-out infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+header {
+  height: 750px;
+  padding: 100px 0px 100px 300px;
+  text-align: end;
+}
+header .titl1 {
+  animation-duration: 3s;
+  animation-name: clignot;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignot {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header .titl2 {
+  animation-duration: 1.7s;
+  animation-name: clignote;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignote {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header nav ul {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 0;
+  background-color: #90ddf0bd;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  left: 350px;
+  right: 350px;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 15px 35px;
+  user-select: none;
+}
+header nav ul li:hover {
+  background-color: white;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+header nav ul li a {
+  font-size: 22px;
+  display: block;
+}
+section.presentation {
+  background-color: #1B2021;
+  color: #F0EDEE;
+  padding: 220px 0;
+}
+section.presentation div {
+  display: flex;
+}
+section.presentation div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+section.presentation div div p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+section.presentation div div a {
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 20px auto 0;
+  transition: all 0.5s;
+}
+section.presentation div div a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+}
+section.presentation div div article {
+  display: flex;
+  text-align: center;
+}
+section.presentation div div article div {
+  border: white 2px solid;
+  padding: 10px 20px;
+}
+section.presentation div div article div p {
+  margin: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+section.conception {
+  padding: 100px 0;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+section.conception div h3 {
+  margin: 20px 0;
+  text-align: center;
+  color: #A44200;
+}
+section.conception div div.navfilter {
+  padding: 0 280px;
+}
+section.conception div div.navfilter nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+}
+section.conception div div.navfilter nav li {
+  display: inline-block;
+  user-select: none;
+  font-size: 18px;
+  color: black;
+  padding: 20px 50px;
+  transition: all 0.5s;
+}
+section.conception div div.navfilter nav li:hover {
+  background-color: #2E2E3A;
+  color: white;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+section.conception div div.contenu {
+  margin: 50px 0;
+}
+section.conception div div.contenu section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.conception div div.contenu section a img {
+  width: 70%;
+  margin: 25px auto;
+}
+section.contact {
+  background-image: url(/images/milky.jpg);
+  opacity: 98%;
+  padding: 120px 0;
+}
+section.contact div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/images/telephoneformulaire.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+}
+section.contact div i {
+  color: #CF5C36;
+  font-size: 80pt;
+  text-align: center;
+}
+section.contact div form {
+  margin: 0 300px;
+}
+section.contact div form div {
+  background-image: none;
+  height: 45%;
+}
+section.contact div form div div label {
+  color: whitesmoke;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+section.contact div form div div input {
+  border: 0;
+  border-bottom: 4px solid #333;
+  font-size: 21px;
+  margin-bottom: 20px;
+  padding: 8px 8px;
+  outline: none;
+  transition: all 0.4s ease-in;
+  background: transparent;
+}
+section.contact div form div div input :focus,
+section.contact div form div div input :valid {
+  border-bottom-color: darkcyan;
+}
+section.contact div form div div textarea {
+  border-radius: 10px;
+  border: none;
+  height: 120px;
+}
+section.contact div form a {
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 20px auto 0;
+  transition: all 0.5s;
+}
+section.contact div form a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+}
+section.merci {
+  padding: 100px 0;
+  background-color: rgba(255, 255, 255, 0.623);
+  text-align: center;
+}
+footer {
+  font-size: 18pt;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #A44200;
+  flex-direction: row;
+}
+footer p {
+  margin: 0px;
+}
+footer div a i {
+  color: #A44200;
+}

@@ -1,0 +1,5 @@
+idée en javascript pour site 
+
+compte a rebours apres rempliçage du formulaire 
+
+page de chargement a l'accueil

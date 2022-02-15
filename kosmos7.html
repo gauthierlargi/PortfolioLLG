@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="portflio" description="portfolio Gauthier Largilliere">
+    <title>Largilliere Gauthier</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/pagestyles.css">
+</head>
+<body>
+
+    <header id="accueil">
+        <div class="center">
+            <div id="toggle"></div>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#apropos">A propos</a></li>
+                    <li><a href="index.html#conception">Conception</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div>
+                    <a href="https://www.linkedin.com/in/gauthier-largilliere-134431211/">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a>
+            
+                    <a href="https://www.instagram.com/Kamaret.LG/?hl=fr">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- gallerie kosmos -->
+
+    <section class="kosmos">
+        <div>
+            <img src="/images/img7.jpg" alt="">
+        </div>
+        <div class="text">
+            <h5>Voyage dans le kosmos</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, tenetur minus sunt similique non repellendus est asperiores necessitatibus minima sint inventore delectus illum perferendis amet mollitia quos soluta laborum totam.
+            </p>
+            <div class="btn">
+                <a href="kosmos6.html">précédent</a>
+                <p>7/9</p>
+                <a href="kosmos8.html">suivant</a>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************************************-->
+
+     <!-- JAVASCRIPT / JQUERY -->
+    <!-- ne pas oublier de l'inclure dans la bibliotheque jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        const toggle = document.getElementById('toggle');
+        const navigation = document.getElementById('navigation');
+        document.onclick = function(e) {
+            if (e.target.id !== 'toggle' && e.target.id !== navigation) {
+                toggle.classList.remove('active');
+                navigation.classList.remove('active');
+            }
+        }
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
